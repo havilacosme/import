@@ -7,7 +7,7 @@
     <div class="form-group row">
         <label for="name" class="col-md-4 col-form-label text-md-right">Arquivo CSV:</label>
         <div class="col-md-6">
-            <input id="file" type="file" class="@error('file') is-invalid @enderror" name="file" autocomplete="file">
+            <input id="file" type="file" <?php echo 'value="C:\Users\bi\Documents\producao_dia.csv"';?> class="@error('file') is-invalid @enderror" name="file" autocomplete="file">
             @error('file')
                 <span class="invalid-feedback" role="alert">
                     <strong>{{ $message }}</strong>
